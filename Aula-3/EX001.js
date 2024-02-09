@@ -1,0 +1,16 @@
+const listaDeCompras = new Map();
+listaDeCompras.set("Maçã", 5);
+listaDeCompras.set("Banana", 3);
+listaDeCompras.set("Leite", 4);
+listaDeCompras.set("Pão", 10);
+const item = "Leite";
+const temNaLista = listaDeCompras.has(item);
+console.log(`O item "${item}" está na lista de compras? ${temNaLista ? "Sim" : "Não"}`);
+const quantidade = listaDeCompras.get(item);
+console.log(`A quantidade de "${item}" na lista de compras é: ${quantidade}`);
+const novoQuantidade = 6;
+listaDeCompras.set(item, novoQuantidade);
+console.log(`A nova quantidade de "${item}" na lista de compras é: ${novoQuantidade}`);
+const itemRemovido = "Banana";
+const removido = listaDeCompras.delete(itemRemovido);
+console.log(`O item "${itemRemovido}" foi removido da lista de compras? ${removido ? "Sim" : "Não"}`);
