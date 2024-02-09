@@ -1,4 +1,8 @@
-const idade = parseInt(prompt("Digite sua idade:"));
-
-const podeDirigir = idade >= 18 ? "Pode dirigir" : "Não pode dirigir";
+const idade = 20; 
+let podeDirigir;
+if (idade >= 18) {
+    podeDirigir = "Pode dirigir";
+} else {
+    podeDirigir = "Não pode dirigir";
+}
 console.log(podeDirigir);
